@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{93720D49-B31D-4BCB-A8B1-CD9F4501CDC6}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CountryPicker.Droid</RootNamespace>
+    <AssemblyName>CountryPicker.Droid</AssemblyName>
+    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="LibPhoneNumber.Droid">
+      <HintPath>..\Dependencies\LibPhoneNumber.Droid.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\Country.cs" />
+    <Compile Include="Widget\CountrySpinner.cs" />
+    <Compile Include="Adapters\CountryAdapter.cs" />
+    <Compile Include="Utils\CountryUtil.cs" />
+    <Compile Include="Extensions\LinqExtension.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ab_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ad_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ae_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\af_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ag_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ai_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\al_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\am_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ao_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\aq_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ar_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\as_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\at_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\au_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\aw_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ax_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\az_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ba_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\bb_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\bd_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\be_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\bf_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\bg_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\bh_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\bi_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\bj_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\bl_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\bm_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\bn_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\bo_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\bq_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\br_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\bs_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\bt_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\bv_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\bw_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\by_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\bz_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ca_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\cc_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\cd_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\cf_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\cg_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ch_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ci_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ck_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\cl_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\cm_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\cn_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\co_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\cr_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\cu_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\cv_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\cw_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\cx_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\cy_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\cz_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\de_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\dj_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\dk_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\dm_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\do_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\dz_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ec_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ee_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\eg_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\eh_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\er_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\es_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\et_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\fi_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\fj_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\fk_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\fm_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\fo_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\fr_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ga_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\gb_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\gd_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ge_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\gf_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\gg_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\gh_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\gi_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\gl_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\gm_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\gn_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\gp_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\gq_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\gr_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\gs_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\gt_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\gu_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\gw_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\gy_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\hk_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\hm_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\hn_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\hr_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ht_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\hu_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\id_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ie_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\il_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\im_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\in_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\io_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\iq_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ir_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\is_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\it_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\je_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\jm_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\jo_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\jp_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ke_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\kg_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\kh_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ki_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\km_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\kn_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\kp_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\kr_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\kw_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ky_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\kz_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\la_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\lb_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\lc_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\li_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\lk_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\lr_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ls_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\lt_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\lu_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\lv_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ly_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ma_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\mc_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\md_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\me_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\mf_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\mg_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\mh_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\mk_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ml_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\mm_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\mn_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\mo_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\mp_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\mq_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\mr_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ms_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\mt_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\mu_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\mv_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\mw_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\mx_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\my_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\mz_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\na_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\nc_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ne_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\nf_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ng_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ni_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\nl_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\no_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\np_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\nr_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\nu_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\nz_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\om_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\pa_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\pe_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\pf_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\pg_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ph_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\pk_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\pl_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\pm_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\pn_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\pr_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ps_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\pt_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\pw_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\py_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\qa_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\re_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ro_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\rs_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ru_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\rw_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\sa_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\sb_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\sc_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\sd_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\se_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\sg_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\sh_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\si_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\sj_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\sk_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\sl_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\sm_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\sn_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\so_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\sr_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ss_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\st_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\sv_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\sx_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\sy_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\sz_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\tc_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\td_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\tf_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\tg_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\th_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\tj_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\tk_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\tl_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\tm_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\tn_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\to_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\tr_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\tt_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\tv_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\tw_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\tz_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ua_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ug_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\um_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\us_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\uy_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\uz_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\va_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\vc_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ve_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\vg_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\vi_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\vn_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\vu_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\wf_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ws_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\xk_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ye_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\yt_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\za_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\zm_flag.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\zw_flag.png" />
+    <AndroidResource Include="Resources\layout\item_view.axml" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Widget\" />
+    <Folder Include="Adapters\" />
+    <Folder Include="Resources\layout\" />
+    <Folder Include="Utils\" />
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>
