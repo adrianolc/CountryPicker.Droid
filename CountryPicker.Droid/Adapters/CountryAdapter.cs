@@ -50,22 +50,22 @@ namespace CountryPicker.Droid.Adapters
 		{
 			var country = _countries[position];
 
-			return GetItemView (country.FlagId, country.Code);
+			View view = LayoutInflater.From (_context).Inflate (Resource.Layout.item_view, null, false);
+
+			view.FindViewById<ImageView> (Resource.Id.country_flag).SetImageResource (country.FlagId);
+			view.FindViewById<TextView> (Resource.Id.country_name).Text = country.Code;
+
+			return view;
 		}
 
 		public override View GetDropDownView (int position, View convertView, ViewGroup parent)
 		{
 			var country = _countries[position];
 
-			return GetItemView (country.FlagId, country.Name);
-		}
+			View view = LayoutInflater.From (_context).Inflate (Resource.Layout.item_drop_view, null, false);
 
-		View GetItemView (int drawable, string name)
-		{
-			View view = LayoutInflater.From (_context).Inflate (Resource.Layout.item_view, null, false);
-
-			view.FindViewById<ImageView> (Resource.Id.country_flag).SetImageResource (drawable);
-			view.FindViewById<TextView> (Resource.Id.country_name).Text = name;
+			view.FindViewById<ImageView> (Resource.Id.country_flag).SetImageResource (country.FlagId);
+			view.FindViewById<TextView> (Resource.Id.country_name).Text = country.Name;
 
 			return view;
 		}

@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <resources>
-	<dimen name="padding_sides">12dp</dimen>
-	<dimen name="padding_top_bottom">8dp</dimen>
-	<dimen name="margin_component">8dp</dimen>
+	<dimen name="padding_drop_sides">12dp</dimen>
+	<dimen name="padding_drop_top_bottom">8dp</dimen>
+	<dimen name="margin_drop_component">8dp</dimen>
+	<dimen name="padding_item_sides">4dp</dimen>
+	<dimen name="padding_item_top_bottom">2dp</dimen>
+	<dimen name="margin_item_component">4dp</dimen>
 </resources>

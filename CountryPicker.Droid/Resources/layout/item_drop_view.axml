@@ -4,12 +4,12 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingLeft="@dimen/padding_item_sides"
-    android:paddingTop="@dimen/padding_item_top_bottom"
-    android:paddingRight="@dimen/padding_item_sides"
-    android:paddingBottom="@dimen/padding_item_top_bottom">
+    android:paddingLeft="@dimen/padding_drop_sides"
+    android:paddingTop="@dimen/padding_drop_top_bottom"
+    android:paddingRight="@dimen/padding_drop_sides"
+    android:paddingBottom="@dimen/padding_drop_top_bottom">
     <ImageView
-        android:layout_width="35dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/country_flag"
         tools:src="@mipmap/br_flag" />
@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/country_name"
-        android:layout_marginLeft="@dimen/margin_item_component"
+        android:layout_marginLeft="@dimen/margin_drop_component"
         android:layout_gravity="center_vertical"
-        tools:text="+55" />
+        tools:text="Brasil" />
 </LinearLayout>

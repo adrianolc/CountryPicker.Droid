@@ -312,6 +312,7 @@
     <AndroidResource Include="Resources\mipmap-hdpi\zw_flag.png" />
     <AndroidResource Include="Resources\layout\item_view.axml" />
     <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\layout\item_drop_view.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
